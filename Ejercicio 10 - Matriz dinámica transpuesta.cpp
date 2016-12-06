@@ -1,15 +1,5 @@
-/*Ejercicio 10: Realice un programa que lea una matriz din·mica de NxM y cree su 
-matriz traspuesta. 
-La matriz traspuesta es aquella en la que la columna i era la fila i de la matriz 
-original.
-
-|1 2 3|       |1 4 7|
-|4 5 6|  -->  |2 5 8|
-|7 8 9|       |3 6 9|
-*/
 
 #include<iostream>
-#include<conio.h>
 using namespace std;
 
 void pedirDatos();
@@ -37,7 +27,7 @@ void pedirDatos(){
 	cout<<"Digite el numero de columnas: ";
 	cin>>nCol;
 	
-	//Reservar memoria para la matriz din·mica
+	//Reservar memoria para la matriz din√°mica
 	puntero_matriz = new int*[nFilas]; //Reservando memoria para las filas
 	for(int i=0;i<nFilas;i++){
 		puntero_matriz[i] = new int[nCol]; //Reservando memoria para las columnas
